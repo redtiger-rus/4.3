@@ -12,6 +12,13 @@ public class Answer {
             }
         }
 
+        System.out.println("test");
+        System.out.println("test");
+        System.out.println("test");
+        System.out.println("test");
+
+
+
         pattern = Pattern.compile("(\\d[0]{2})-([0]{4})");
         Matcher matcher2 = pattern.matcher(strBuilder);
         while (matcher2.find()) {
