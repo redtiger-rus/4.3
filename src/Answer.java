@@ -8,7 +8,7 @@ public class Answer {
         for (int aCount = 1000000; aCount <= 9999999; aCount++) {
             Matcher matcher = pattern.matcher(Integer.toString(aCount));
             if (matcher.find()) {
-                strBuilder.append("+7 (926) " + matcher.group(1) + "-" + matcher.group(2) + "; ");
+                strBuilder.append("+7 (926) ").append(matcher.group(1)).append("-").append(matcher.group(2)).append(";");
             }
         }
 
