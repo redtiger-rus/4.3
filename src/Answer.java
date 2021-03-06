@@ -9,13 +9,11 @@ public class Answer {
             Matcher matcher = pattern.matcher(Integer.toString(aCount));
             if (matcher.find()) {
                 strBuilder.append("+7 (926) ").append(matcher.group(1)).append("-").append(matcher.group(2)).append(";");
+//                strBuilder.append("+7 (926) " + matcher.group(1) + "-" + matcher.group(2) + "; ");
             }
         }
 
-        System.out.println("test");
-        System.out.println("test");
-
-
+        System.out.println(strBuilder);
 
         pattern = Pattern.compile("(\\d[0]{2})-([0]{4})");
         Matcher matcher2 = pattern.matcher(strBuilder);
